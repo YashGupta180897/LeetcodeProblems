@@ -5,23 +5,25 @@ import java.util.List;
 
 public class Maine {
 
-    public static void main(String[] args) {
-        /*Class1 c=new Class1();
-        c.show();
-        c.cal(2,3);
-        System.out.println(c.x);
-        System.out.println(c.y);*/
-
-        List a=new ArrayList();
-        a.add("Alice");
-        a.add(1);
-        System.out.println(a.get(0) instanceof Object);
-        System.out.println(a.get(1) instanceof Integer);
-        a.add("bob");
-        ArrayList b=new ArrayList();
-        b.add("a");
-        b.add("c");
-        a.addAll(b);
-        System.out.println(a);
+    public static void fun(String s)
+    {
+        System.out.println("String");
     }
+    public static void fun(Object o)
+    {
+        System.out.println("Object");
+    }
+    public static void fun(Integer i)
+    {
+        System.out.println("Integer");
+    }
+
+    public static void main(String args[])
+    {
+        ArrayList list=new ArrayList();
+        list.add(1);
+        list.add("ve");
+        System.out.println(list);
+    }
+
 }
